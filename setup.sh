@@ -20,7 +20,7 @@ fi
 git init $project_name
 cd $project_name
 git sparse-checkout init --cone
-git remote add -f origin <URL_of_your_template_repository>
+git remote add -f origin https://github.com/felix-newman/kaggle-setup.git
 git sparse-checkout set config.py dataloading.py pyproject.toml pyproject.lock
 
 # Create new Poetry project using the existing pyproject.toml
